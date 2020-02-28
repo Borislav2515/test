@@ -146,6 +146,7 @@ body{
 #input-none{
 	display: none;
 }
+
 @media screen and (max-width: 320px) {
   .section{
   	width: 300px;
@@ -188,6 +189,5 @@ body{
 	left: 75px;
 	opacity: 0.9;
 	}
-
 }
 	
