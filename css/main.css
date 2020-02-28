@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #E5E5E5;
+	font-family: 'Roboto', Arial ; 
+
+}
+.section{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 356px;
+	height: 600px;
+	background: #FAFAFA;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+}
+.section:hover{
+    border: 2px solid #039BE5;
+}
+.d-flex{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.header{
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 70px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-family: Roboto;
+	font-size: 24px;
+	line-height: 34px;
+}
+.header h1{
+	position: absolute;
+	top: 28px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 34px;
+	font-weight:normal;
+	font-family: Roboto;
+    font-style: normal;
+	color: #000000;
+}
+.line{
+	position: absolute;
+	width: 300px;
+	height: 0;
+	top: 120px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-bottom: 1px solid #DDDDDD;	
+}
+.plus{
+	position: absolute;
+	top: 165px;
+	left: 202px;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	background: #039BE5;
+	color: white;
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.plus:hover{
+	border: 1px solid #039BE5;
+	top: 164px;
+	left: 201px;
+
+}
+.plus:active{
+	border: none;
+	top: 165px;
+	left: 202px;
+	opacity: 0.9;
+}
+.minus{
+	position: absolute;
+	top: 165px;
+	left: 106px;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	background: #039BE5;
+	color: white;
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.minus:hover{
+	border: 1px solid #039BE5;
+	top: 164px;
+	left: 105px;
+}
+.minus:active{
+	border: none;
+	top: 165px;
+	left: 106px;
+	opacity: 0.9;
+}
+.total-cont{
+	position: absolute;
+	top: 246px;
+	left: 28px;
+	width: 300px;
+	height: 56px;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 18px;
+	align-items: center;
+	text-align: center;
+	color: #000000;
+	line-height: 56px;
+}
+#total{
+	position: absolute;
+	display: inline;
+}
+#input-none{
+	display: none;
+}
