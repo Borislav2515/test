@@ -146,3 +146,48 @@ body{
 #input-none{
 	display: none;
 }
+@media screen and (max-width: 359px) {
+  .section{
+  	width: 300px;
+	height: 550px;
+  }
+  .minus{
+	top: 165px;
+	left: 75px;
+  } 
+  .plus{
+	top: 165px;
+	left: 180px;
+  } 
+  .total-cont{
+  	top: 246px;
+	left: 0;
+  }
+  .line{
+  	width: 235px;
+  }
+  .plus:hover{
+	border: 1px solid #039BE5;
+	top: 164px;
+	left: 181px;
+	}
+	.plus:active{
+	border: none;
+	top: 165px;
+	left: 180px;
+	opacity: 0.9;
+	}
+	.minus:hover{
+	border: 1px solid #039BE5;
+	top: 164px;
+	left: 76px;
+	}
+	.minus:active{
+	border: none;
+	top: 165px;
+	left: 75px;
+	opacity: 0.9;
+	}
+
+}
+	
