@@ -10,9 +10,13 @@ var yPred = 0;
 
 window.onload = function(){
 	if (localStorage.getItem('p1')!==null) {
-        locVal = localStorage.getItem('p1');
-        total.innerHTML = locVal;
-        y = locVal;
+            locVal = localStorage.getItem('p1');
+            total.innerHTML = locVal;
+            y = locVal;
+	}else{
+            localStorage.getItem('p1')===null;
+	    console.log('Текущее значение: '+ y);
+
 	}
 }
 
@@ -41,10 +45,11 @@ minus.onclick = function mn(){
    	
    	if (x > yPred) {
    		console.log('Количество увеличилось, текущее значение: ' + x)
-   	}else if (x <= yPred) {
+   	}else if (x < yPred) {
    		console.log('Количество уменьшилось, текущее значение: ' + x)
    	}else{
-
+		x=y;
+   		console.log('Текущее значение:'+ x);
    	}
     
    });
