@@ -10,12 +10,12 @@ var yPred = 0;
 
 window.onload = function(){
 	if (localStorage.getItem('p1')!==null) {
-            locVal = localStorage.getItem('p1');
-            total.innerHTML = locVal;
-            y = locVal;
+        locVal = localStorage.getItem('p1');
+        total.innerHTML = locVal;
+        y = locVal;
 	}else{
-            localStorage.getItem('p1')===null;
-	    console.log('Текущее значение: '+ y);
+		localStorage.getItem('p1')===null;
+		console.log('Текущее значение: '+ y);
 
 	}
 }
@@ -42,14 +42,14 @@ minus.onclick = function mn(){
 }
 	let mutationObserver = new MutationObserver(function(mutations) {
    mutations.forEach(function(mutation) {
-   	
-   	if (x > yPred) {
-   		console.log('Количество увеличилось, текущее значение: ' + x)
-   	}else if (x < yPred) {
+   	if  (x > yPred) {
+   		console.log('Количество увеличилось, текущее значение: ' + x);
+   	}else if  (x < yPred) {
    		console.log('Количество уменьшилось, текущее значение: ' + x)
    	}else{
-		x=y;
+   		x=y;
    		console.log('Текущее значение:'+ x);
+
    	}
     
    });
