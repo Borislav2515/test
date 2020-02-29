@@ -1,7 +1,6 @@
 var plus = document.getElementById('plus');
 var minus = document.getElementById('minus');
 var total = document.getElementById('total');
-var nuje = document.getElementById('nuje');
 var inputNone = document.getElementById('input-none');
 var locVal = localStorage.getItem('p1');
 var x = inputNone.value;
