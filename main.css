@@ -74,6 +74,10 @@
     text-decoration: none;
     color: #fff;
 }
+.mobile-menu__link:hover{
+    border-bottom: 2px solid white;
+    margin-bottom: -1px;
+}
 .mobile-menu__checkbox {
     display: none;
 }
