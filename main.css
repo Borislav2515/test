@@ -1,15 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .mobile-menu {
     position: fixed;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: flex-start;
-    padding: 0 16px;
+    padding: 16px;
     top: 0;
     background-color: black;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 200px;
     z-index: 9999999;
+    transition: .3s;
+    background-image: url("one.jpg");
+    /* Центр и масштаб изображения хорошо */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .mobile-menu__btn {
     position: relative;
@@ -20,6 +30,7 @@
     height: 30px;
     cursor: pointer;
     transition: .4s;
+    z-index: 111;
 }
 .mobile-menu__icon {
     display: block;
@@ -50,10 +61,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 50px;
+    top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 99;
     height: 0;
     opacity: 1;
     transition: .5s;
@@ -101,3 +112,65 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+
+.container{
+    display: block;
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    margin-top: 150px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Создайте четыре одинаковых столбца, которые находятся рядом друг с другом */
+.column {
+    flex: 2.5%;
+    max-width: 24.5%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Адаптивный макет - делает два столбца макет вместо четырех столбцов */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Адаптивный макет - делает два столбца стека друг на друга, а не рядом друг с другом */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
