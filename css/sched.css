@@ -1,0 +1,92 @@
+.section__animated{
+min-height: 100vh;
+    background-size: cover;
+}
+.schedule_block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.schedule_item__time_wrap{
+padding: 0 10px;
+}
+.schedule_item__wrap{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: auto;
+    min-height: 150px;
+}
+.right{
+    flex-direction: row-reverse;
+}
+.col{
+    display: flex;
+    margin: 0 auto;
+}
+.schedule_item__time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    background: #f5aec0;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    box-shadow: 0 0 0 1px #f5aec0;
+    z-index: 1;
+}
+.schedule_item__content{
+    min-width: 40%;
+    max-width: 40%;
+    height: 100px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+.schedule_item__title{
+    margin: 0 0 15px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 300;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.schedule_item__text{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+
+.schedule_item--right{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-bottom: 20px;
+}
+.schedule_item__time16{
+    float: right;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 479px) {
+    .schedule_item__content{
+        min-width: 70%;
+    }
+}
+
+
+
