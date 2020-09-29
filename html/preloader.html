@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="overlay">
+    <div class="popup">
+        <h2>Модальное Окно!</h2>
+        <p>
+            Ширина модального окна задана в процентах, в зависимости от ширины родительского контейнера, в данном примере это фон затемнения.
+        </p>
+        <div class="pl-left">
+            <img src="http://placeimg.com/320/320/tech">
+        </div>
+        <p>Предусмотрена возможность использования встроенных миниатюр, расположенных слева или справа, в отдельном div-контейнере с выделенным классом .pl-left и .pl-right соответственно.</p>
+        <div class="pl-right">
+            <img src="http://placeimg.com/320/320/nature">
+        </div>
+        <p>Размер блока миниатюр так же определил в процентной записи (25%), тем самым обеспечив возможность пропорционального изменения, при просмотре на экранах различных пользовательских устройств.</p>
+        <p>
+            Простейшая анимация появления с помощью изменения свойства прозрачности (opacity) от 0 к 1
+        </p>
+        <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans+JP:wght@500&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/sched.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/invitation.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Наша свадьба</title>
+</head>
+<body>
+
+<div id="preloader">
+    <div id="preloader_preload">
+        <div class="wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="shadow"></span>
+            <span class="text">Loading</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="love">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                                   result="love"/>
+                    <feBlend in="SourceGraphic" in2="love"/>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+</div>
+
+<div class="page">
+
+    <div class="md-overlay" id="md-overlay"></div>
+
+    <div class="md-modal md-effect-11" id="modal-11">
+        <div class="md-content">
+            <h3>Спасибо что вы с нами!</h3>
+            <div>
+                <p></p>
+                <ul class="popup__text">
+                    <li class="popup__text__item">
+                        Будем счастливы, если Вы разделите с нами радость нашего свадебного дня, в который мы постараемся воссоздать атмосферу нашей будущей семьи.
+                    </li>
+                    <li class="popup__text__item"><strong>Пожалуйста подтвердите свое приглашение!</strong>
+                    </li>
+                    <li class="popup__text__item"> И следите за новостями</li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScU2QMcro1O1HDrBF02TRrJdNReIr7NylWvIBMcXgOtyfqCeA/viewform">
+                    <button class="md-btn" id="md-btn_ok">Подвердить</button>
+                </a>
+                <button class="md-btn" id="md-btn_no">Напомнить позже</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="hello__section">
+        <div class="container">
+            <div class="hello__content">
+                <h1 class="hello__title">
+                    Борислав & Диана
+                </h1>
+                <div class="hello__subtitle">
+                    Счастливы быть вместе
+                </div>
+            </div>
+            <div class="timer">
+                <div class="hello__content">
+                    <div class="timer__icon">
+                        <img class="heart" src="img/crown.svg" alt="crown" width="50" height="50">
+                    </div>
+                    <div class="timer__date">
+                        <div class="timer__date__title">
+                            10 Октября 2020
+                        </div>
+                    </div>
+                </div>
+                <p class="timer__date__count">
+                <div class="timer__content">
+                    <span class="days__text">
+                             До свадьбы осталось <span id="timer">11</span> дней
+                    </span>
+                </div>
+            </div>
+            <div class="hello__content">
+                <div class="hello__text">
+                    Милые гости, спасибо, что приняли наше приглашение. Мы не представляем этот праздник без Вас -
+                    близких и дорогих нам людей. И будем счастливы разделить с вами радость этого торжества!
+                    <br>
+                    <br>
+                    Всю подробную информацию о
+                    <br>
+                    свадьбе мы будем размещать на сайте, по мере её появления. Вы получите сообщение об этом на свой
+                    e-mail или телефон.
+                </div>
+            </div>
+            <div class="hello__scroll">
+                <a href="#about_us" id="scroll1" onclick="playAudio();">
+                    <div class="arrow-8"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_us" id="about_us">
+        <div class="menu__wrap">
+            <div class="menu">
+                <div class="menu__container">
+                    <ul class="menu__list">
+                        <li class="menu__list__item">
+                            <a class="menu__link" href="#about_us">О нас</a>
+                        </li>
+                        <li class="menu__list__item">
+                            <a class="menu__link" href="#invitation">Пригласительное</a>
+
+                        </li>
+                        <li class="menu__list__item">
+                            <a class="menu__link" href="#section__animated">Распорядок дня</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="about_us__title ">
+            <div class="container">
+                <h1 class="section__title">
+                    О Нас
+                </h1>
+            </div>
+            <div class="about_us__wrap">
+                <div class="about_us__wrap__block" id="bounceInLeft">
+                    <div class="about_us__image">
+                        <img src="img/di.jpeg" alt="Диана">
+                        <span class="about_us__block__mark">
+                            Невеста
+                        </span>
+                    </div>
+                    <div class="about_us__text">
+                        <div class="about_us_block__content">
+                            <div class="about_us__content__icon">
+                                <img src="img/crown.svg" alt="crown" width="50" height="50" class="crown__heart">
+                            </div>
+                            <p class="name">
+                                Диана
+                            </p>
+                        </div>
+                        <div class="about_us_block__text">
+                            Одержимый организатор и фанат самостоятельных путешествий.
+                            <br>
+                            <br>
+                            Девиз по жизни: Хочешь - делаешь, не получается - значит не сильно хочешь :)
+                        </div>
+                    </div>
+                </div>
+                <div class="about_us__wrap__block" id="bounceInRight">
+                    <div class="about_us__image">
+                        <img src="img/bo.jpeg" alt="Борислав">
+                        <span class="about_us__block__mark">
+                            Жених
+                        </span>
+                    </div>
+                    <div class="about_us__text">
+                        <div class="about_us_block__content">
+                            <div class="about_us__content__icon">
+                                <img src="img/us.svg" alt="us" width="50" height="50" class="us">
+                            </div>
+                            <p class="name">
+                                Борислав
+                            </p>
+                        </div>
+                        <div class="about_us_block__text">
+                            Чемпион по сюрпризам и душа компании.
+                            <br>
+                            <br>
+                            Девиз по жизни: Это у Шекспира "быть или не быть!", а у нас: "Эх! Была - не была."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hello__scroll">
+            <a href="#invitation" id="scroll2" onclick="playAudio()">
+                <div class="arrow-8"></div>
+            </a>
+        </div>
+    </section>
+
+    <section class="invitation" id="invitation">
+        <div class="container">
+            <div class="section__title">
+                <h3>
+                    Приглашение на свадьбу
+                </h3>
+            </div>
+            <div class="invitation__wrap">
+                <p class="invitation__title">
+                    Уважаемый гость!
+                </p>
+                <br>
+                <p class="invitation__text">
+                    Будем счастливы, если Вы <br>
+                    разделите с нами радость нашего <br>
+                    свадебного дня, в котором мы <br>
+                    постараемся воссоздать атмосферу <br>
+                    нашей будущей семьи.<br>
+                    <br>Торжество состоится 10/10/2020<br> в 16:00 в ресторане Торне <br>
+                    по адресу: г.Владикавказ, Гизельское ш. 25
+                </p>
+                <br>
+                <p class="infinite__signature">
+                    Ваши Борислав и Диана!
+                </p>
+                <div class="invitation__style">
+                    <div class="style__color red"></div>
+                    <div class="style__color blue"></div>
+                    <div class="style__color yellow"></div>
+                    <div class="style__color pink"></div>
+                    <div class="style__color aquamarine"></div>
+                </div>
+                <div class="btn__invitation__wrap">
+                    <a target="2"
+                       href="https://docs.google.com/forms/d/e/1FAIpQLScU2QMcro1O1HDrBF02TRrJdNReIr7NylWvIBMcXgOtyfqCeA/viewform">
+                        <div class="btn__invitation" id="btn__invitation">
+                            Подтвердить
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hello__scroll">
+            <a href="#section__animated" id="scroll3" onclick="playAudio()">
+                <div class="arrow-8"></div>
+            </a>
+        </div>
+    </section>
+
+    <section class="section__animated" id="section__animated">
+        <div class="container">
+            <h3 class="section__title">
+                Распорядок дня
+            </h3>
+            <div class="schedule__blocks_wrap">
+                <div class="schedule_block col">
+                    <div class="schedule_item__wrap">
+                        <div class="schedule_item__time_wrap">
+                            <div class="schedule_item__time animated" id="block">12.00</div>
+                        </div>
+                        <div class="schedule_item__content">
+                            <p class="schedule_item__title">Фотосессия</p>
+                            <p class="schedule_item__text">
+                                Будем кататься на яхте. Сборы на причале клуба Марко Поло. C собой - шампанское и темные
+                                очки ))
+                            </p>
+                        </div>
+                    </div>
+                    <div class="schedule_item__wrap right">
+                        <div class="schedule_item__time_wrap">
+                            <div class="schedule_item__time schedule_item__time16 animated">16.00</div>
+                        </div>
+                        <div class="schedule_item__content">
+                            <p class="schedule_item__title">
+                                Сбор гостей
+                            </p>
+                            <p class="schedule_item__text">
+                                Оставляйте свои авто дома. Мы заказали для вас автобус
+                            </p>
+                        </div>
+                    </div>
+                    <div class="schedule_item__wrap">
+                        <div class="schedule_item__time_wrap">
+                            <div class="schedule_item__time schedule_item__time16 animated">18.30</div>
+                        </div>
+                        <div class="schedule_item__content">
+                            <p class="schedule_item__title">
+                                ЗАГС
+                            </p>
+                            <p class="schedule_item__text">
+                                Создание семьи!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="schedule_item__wrap right">
+                        <div class="schedule_item__time_wrap">
+                            <div class="schedule_item__time schedule_item__time16 animated">20.00</div>
+                        </div>
+                        <div class="schedule_item__content">
+                            <p class="schedule_item__title">
+                                Торт
+                            </p>
+                            <p class="schedule_item__text">
+                                Самый вкусный в вашей жизни
+                            </p>
+                        </div>
+                    </div>
+                    <div class="schedule_item__wrap">
+                        <div class="schedule_item__time_wrap">
+                            <div class="schedule_item__time schedule_item__time16 animated">21.00</div>
+                        </div>
+                        <div class="schedule_item__content">
+                            <p class="schedule_item__title">
+                                Танцы
+                            </p>
+                            <p class="schedule_item__text">
+                                Гори ясно, танцпол!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
